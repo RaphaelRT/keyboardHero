@@ -1,0 +1,295 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  color:#FFFFFF;
+  position: relative;
+  background-color: #36BDEA;
+}
+html,body
+{
+overflow:hidden;
+}/*Blocage du scroll*/
+
+.sound {
+  right: 1%;
+  position: absolute;
+  z-index: 100;
+  min-height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+}
+.sound:hover {
+  transform: scale(1.1);
+}
+.sound img {
+  width: 100%;
+}
+.blur{
+  background-image: url("../images/game_background.svg");
+  background-size: cover;
+  background-position: 65% center;
+  height: 100vh;
+  width:100%;
+}
+
+.hidden{
+  display: none!important;
+}
+div.play{
+  z-index: 100;
+  position: absolute;
+  width: 60%;
+  height: 100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+}
+div.play .playImg{
+  position: absolute;
+  width: 100px;
+  top: 47vh;
+  left: 27vw;
+}
+div.gameOver{
+  z-index: 100;
+  position: absolute;
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  padding-top: 15vh;
+  align-items: center;
+  flex-direction: column;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+}
+div.gameOver .playImg{
+  width: 30vw;
+  margin-bottom: 13vh;
+}
+div.gameOver .tryAgain {
+  width: 100px;
+}
+div[class^='column']{
+  width: 66px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+div.game{
+  padding: 0;
+  width: 60%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.5s all;
+}
+.pause{
+  filter: blur(5px);
+}
+div.rightMenu{
+  position: absolute;
+  top: 50px;
+  left: 2%;
+  height: 90vh;
+}
+div.name {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+}
+div.name span {
+  font-size: 2rem;
+}
+div.leftMenu{
+  position: absolute;
+  top: 50px;
+  right: 2%;
+  height: 90vh;
+}
+div[class$='Container']{
+  height: 65px;
+  width: 210px;
+  margin-top: 10%;
+  color: #FFFFFF;
+  font-size: 14pt;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+div.homeContainer {
+  cursor: pointer;
+  transition: 0.5s all;
+  border: solid 4px #c23616;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #e84118;
+}
+a {
+  text-decoration: none;
+}
+div.homeContainer:hover{
+  background-color: inherit;
+  color: #e84118;
+  border: solid 4px #e84118;
+  background-size: 100% 100%;
+}
+div.scoreContainer{
+  border-radius: 2rem;
+  box-sizing: border-box;
+  border: solid 4px #f9ca24;
+}
+div.serieContainer{
+  position: relative;
+  top: 20vh;
+  border: solid #44bd32 4px;
+  border-radius: 2rem;
+  background-size: 100% 100%;
+}
+div.levelContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 5%;
+  box-sizing: border-box;
+  border: solid #22a6b3 4px;
+  align-items: center;
+  background-color: #7ed6df;
+  border-radius: 2rem;
+}
+.level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+p{
+  text-align: center;
+  user-select: none;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px;
+}
+div.levelContainer p:last-child{
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+div.levelContainer p:first-child:hover{
+  opacity: 0.3;
+  cursor: pointer;
+  color: #000000;
+}
+div.levelContainer p:first-child{
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+div.levelContainer p:last-child:hover{
+  opacity: 0.3;
+  cursor: pointer;
+  color: #000000;
+}
+div.life{
+  width: 20px;
+  height: 60vh;
+  position: relative;
+  top: 10%;
+  left: 45%;
+  background-image: linear-gradient(to bottom, #77DD87, #F3FF99, #DD9377);
+  opacity: 1;
+  border-radius: 5px;
+}
+.divImage{
+  position: absolute;
+  width: 4.5rem;
+  height: 4.7rem;
+  display: flex;
+  border-radius: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+.divImage img{
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  right: -0.5rem;
+  top: -0.5rem;
+}
+div.levelCursor{
+  width: 40px;
+  height: 5px;
+  background: #FFFFFF;
+  opacity: 0.8;
+  position: relative;
+  right: 10px;
+  transition: 0.65s all;
+}
+div.limit{
+  position: absolute;
+  bottom: 110vh;
+  left: 50%;
+  transform: translate(-50%);
+  background: url('../images/basket.svg') no-repeat;
+  background-size: cover;
+  height: 15vh;
+  width: 65vw;
+  opacity: 0.9;
+}
+div.bestScoreContainer{
+  box-sizing: border-box;
+  border: solid 4px #0984e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+div.play p{
+  color: white;
+  position: relative;
+  top: 5%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 32pt;
+  font-family: 'Nunito', sans-serif;
+  opacity: 0.7;
+  font-size: 30px;
+}
+div.play p br{
+  font-size: 40px;
+}
+.letterSpan {
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: 3.3rem;
+  color: #F0F0F0;
+}
+@media screen and (max-width:1240px) {
+  div[class$='Container']{
+    height: 50px;
+    width: 150px;
+  }
+  p{
+    text-align: center;
+  }
+  div.levelContainer p:last-child{
+    font-size: 20pt;
+    top: -55%;
+  }
+  div.levelContainer p:first-child{
+    font-size: 28pt;
+    top: -98%;
+  }
+}

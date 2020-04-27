@@ -1,0 +1,126 @@
+body{
+  background-image: url("../images/home_background.svg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.sound {
+  min-height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+}
+.sound:hover {
+  transform: scale(1.1);
+}
+.sound img {
+  width: 100%;
+}
+
+/***********BODY********************************/
+html, body{
+  overflow: hidden;/** stopper le scroll sur la page **/
+}
+/***********LOGO KEYBOARD HERO********************************/
+.logoContainer{
+  text-align: center;
+  position: relative;
+  top: 10vh;
+}
+.logo{
+  width: 700px;
+  opacity: 0.9;
+  user-select: none;
+}
+/**************INPUT RENTREZ VOTRE SURNOM*****************************/
+.largeurLabelInput{
+  text-align: center;
+  position: relative;
+  top: 10vh;
+}
+.largeurLabelInput input{
+  width: 253px;
+  height: 44px;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  top: 20vh;
+  outline: none;
+  color: #999999;
+  text-align: center;
+  font-size: 16px;
+  user-select: none;
+  }
+/***************REGLES QUI DEFILENT****************************/
+#rules{
+  color: #fff;
+  text-shadow: #333 1px 1px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+  margin-top: 15vh;
+  user-select: none;
+  transition: all 0.3s ease-in;
+}
+/****************LES TROIS BOUTONS NIVEAUX**************************/
+div.bottomButton{
+  position: absolute;
+  bottom: 5vh;
+  width: 100vw;
+}
+#buttonLevelContainer{
+  display: flex;
+  justify-content: space-around;
+  opacity: 0.9;
+}
+.levelButtonGame {
+  color: #fff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 2rem;
+  padding: 1rem 3.5rem 1rem 3.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.levelButtonGame span {
+  user-select: none;
+}
+.beginner {
+  background-color: #2ecc71;
+  border: solid #27ae60 4px;
+}
+.normal {
+  background-color: #3498db;
+  border: solid #2980b9 4px;
+}
+.hard {
+  background-color: #e74c3c;
+  border: solid #c0392b 4px;
+}
+.beginner:hover {
+  background-color: inherit;
+  color: #2ecc71;
+  border: solid #2ecc71 4px;
+}
+.normal:hover{
+  background-color: inherit;
+  color: #3498db;
+  border: solid #3498db 4px;
+}
+.hard:hover{
+  background-color: inherit;
+  color: #e74c3c;
+  border: solid #e74c3c 4px;
+}
+

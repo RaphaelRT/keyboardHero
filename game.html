@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Keyboard Hero</title>
+    <meta name="description" content="Jouez à Keyboard Hero, apprenez à taper au clavier."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/game.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:800i" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+  </head>
+  <body>
+    <div class="sound">
+      <img src="./images/volume-on.svg" alt="">
+    </div>
+    <div class="play">
+      <p>Appuie sur la bonne touche lorsque  <br> la lettre entre dans le panier ...  <br>mais attention aux bombes!</p>
+      <img class="playImg" src="images/play.svg" alt="play">
+    </div>
+    <div class="gameOver hidden">
+      <img class="playImg" src="./images/gameOver.svg" alt="">
+      <img class="tryAgain" src="./images/tryAgain.svg" alt="">
+    </div>
+    <div class="blur pause">
+    </div>
+    <div class="rightMenu">
+      <div class="name">
+        <span></span>
+      </div>
+      <div class="levelContainer">
+        <p>-</p>
+        <p class="level">Niveau :</p>
+        <p>+</p>
+      </div>
+      <div class="scoreContainer">
+        <p>Score : </p>
+      </div>
+      <div class="bestScoreContainer">
+        <p>meilleur : </p>
+      </div>
+      <div class="serieContainer">
+        <p>Série : </p>
+      </div>
+    </div>
+      <div class="game pause">
+        <div class="column-1"></div>
+        <div class="column-2"></div>
+        <div class="column-3"></div>
+        <div class="column-4"></div>
+        <div class="column-5"></div>
+        <div class="column-6"></div>
+        <div class="column-7"></div>
+        <div class="column-8"></div>
+        <div class="limit"></div>
+      </div>
+      <div class="leftMenu">
+        <a href="index.html">
+          <div class="homeContainer">
+            <span>ACCUEIL</span>
+          </div>
+        </a>
+        <div class="life">
+          <div class="levelCursor"></div>
+        </div>
+      </div>
+    <audio class="gameMusic" src="audio/Game-Music.mp3"></audio>
+    <audio class="blop" src="audio/blop.wav"></audio>
+    <audio class="bomb" src="audio/bomb.mp3"></audio>
+    <audio class="cash" src="audio/Cash.wav"></audio>
+    <audio class="lose" src="audio/You-lose-sound-effect.mp3"></audio>
+    <audio class="wrong" src="audio/wrong.wav"></audio>
+    <script src="scripts/game.js"></script>
+  </body>
+</html>

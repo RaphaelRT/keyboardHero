@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Keyboard Hero</title>
+    <meta name="description" content="Jeu pédagogique pour apprendre et connaitre les touches d'un clavier par coeur"/>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:800i" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+  </head>
+  <body>
+  <header>
+    <div class="sound">
+      <img src="./images/volume-on.svg" alt="">
+    </div>
+  </header>
+    <div class="container">
+      <div class="logoContainer">
+        <img src="images/logo.svg" alt="logo" class="logo"/>
+      </div>
+      <div class="largeurLabelInput">
+       <input type="text" name="name" class="textLabelInput" placeholder="Votre surnom">
+      </div>
+      <div id="rules">
+      </div>
+      <div class="bottomButton">
+        <div id="buttonLevelContainer">
+          <div class="beginner levelButtonGame">
+            <span>débutant</span>
+          </div>
+          <div class="normal levelButtonGame">
+            <span>Intermédiaire</span>
+          </div>
+          <div class="hard levelButtonGame">
+            <span>difficile</span>
+          </div>
+        </div>
+      </div>
+    </div><!-- fin container-->
+    <audio class="homePage" src="audio/home_page.mp3"></audio>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+  <script src="scripts/homePage.js"></script>
+  </body>
+</html>
